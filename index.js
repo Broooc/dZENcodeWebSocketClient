@@ -1,6 +1,7 @@
 const WebSocket = require('ws')
+const { connectionURL } = require('./config')
 
-const socket = new WebSocket('ws://localhost:443')
+const socket = new WebSocket(connectionURL)
 
 socket.addEventListener('open', (event) => {
     
